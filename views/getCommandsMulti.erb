@@ -1,0 +1,9 @@
+<%
+ap "GET"
+commands=[
+"Get-WmiObject win32_bios | get-member",
+"Get-WmiObject win32_bios | get-member",
+"Get-WmiObject win32_bios | get-member",
+]
+%>
+<%= "#{commands.to_json}" %>
